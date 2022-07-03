@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpersonal_organizer=self.webpackChunkpersonal_organizer||[]).push([[689],{2689:function(n,e,r){r.r(e),r.d(e,{default:function(){return a}});var u=r(184),a=function(){return(0,u.jsx)("div",{children:"page not found"})}}}]);
+//# sourceMappingURL=689.288c81c2.chunk.js.map
