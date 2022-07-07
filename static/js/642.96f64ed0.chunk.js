@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpersonal_organizer=self.webpackChunkpersonal_organizer||[]).push([[642],{2642:function(n,e,r){r.r(e),r.d(e,{default:function(){return u}});var a=r(184),u=function(){return(0,a.jsx)(a.Fragment,{children:"CalendarView"})}}}]);
+//# sourceMappingURL=642.96f64ed0.chunk.js.map

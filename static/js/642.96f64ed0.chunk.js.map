@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/642.96f64ed0.chunk.js","mappings":"uLAMA,EAJqB,WACnB,OAAO","sources":["views/CalendarView/CalendarView.jsx"],"sourcesContent":["import styles from './CalendarView.module.css';\n\nconst CalendarView = () => {\n  return <>CalendarView</>;\n};\n\nexport default CalendarView;\n"],"names":[],"sourceRoot":""}
