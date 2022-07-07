@@ -7,6 +7,8 @@ import Nav from 'react-bootstrap/Nav';
 
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Navigation.module.css';
@@ -46,6 +48,28 @@ export const Navigation = () => {
             >
               <TextSnippetIcon className={styles.icon} />
               Notes
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item className={styles.item}>
+            <Nav.Link
+              as={NavLink}
+              className={styles.link}
+              eventKey="calendar"
+              to="/calendar"
+            >
+              <CalendarMonthIcon className={styles.icon} />
+              Calendar
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item className={styles.item}>
+            <Nav.Link
+              as={NavLink}
+              className={styles.link}
+              eventKey="map"
+              to="/map"
+            >
+              <AddLocationAltIcon className={styles.icon} />
+              Map
             </Nav.Link>
           </Nav.Item>
         </>

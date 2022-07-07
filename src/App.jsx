@@ -12,6 +12,8 @@ const HomeView = lazy(() => import('./views/HomeView/HomeView'));
 const RegisterView = lazy(() => import('./views/RegisterView/RegisterView'));
 const LoginView = lazy(() => import('./views/LoginView/LoginView'));
 const ContactsView = lazy(() => import('./views/ContactsView/ContactsView'));
+const CalendarView = lazy(() => import('./views/CalendarView/CalendarView'));
+const MapView = lazy(() => import('./views/MapView/MapView'));
 const NotFoundPageView = lazy(() =>
   import('./views/NotFoundPageView/NotFoundPageView')
 );
@@ -67,6 +69,30 @@ export const App = () => {
                 component={
                   <Suspense fallback={<Loader />}>
                     <TodosView />
+                  </Suspense>
+                }
+              />
+            }
+          />
+          <Route
+            path="/calendar"
+            element={
+              <PrivateRoute
+                component={
+                  <Suspense fallback={<Loader />}>
+                    <CalendarView />
+                  </Suspense>
+                }
+              />
+            }
+          />
+          <Route
+            path="/map"
+            element={
+              <PrivateRoute
+                component={
+                  <Suspense fallback={<Loader />}>
+                    <MapView />
                   </Suspense>
                 }
               />
