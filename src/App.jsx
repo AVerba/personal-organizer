@@ -7,7 +7,7 @@ import PublicRoute from './Routes/PublicRoute';
 import { AppBar } from './components/AppBar';
 import Loader from './components/UI/Loader/Loader';
 import { TodosView } from './views/TodosView';
-
+import { getMonth } from './utils';
 const HomeView = lazy(() => import('./views/HomeView/HomeView'));
 const RegisterView = lazy(() => import('./views/RegisterView/RegisterView'));
 const LoginView = lazy(() => import('./views/LoginView/LoginView'));
@@ -19,6 +19,7 @@ const NotFoundPageView = lazy(() =>
 );
 
 export const App = () => {
+  console.table(getMonth(7));
   const dispatch = useDispatch();
   return (
     <>
