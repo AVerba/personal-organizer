@@ -1,1 +1,1 @@
-// export {MapApp} from './MapApp';
+export { MapApp } from './MapApp';
