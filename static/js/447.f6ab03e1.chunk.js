@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpersonal_organizer=self.webpackChunkpersonal_organizer||[]).push([[447],{6447:function(n,e,r){r.r(e),r.d(e,{default:function(){return u}});var a=r(184),u=function(){return(0,a.jsx)(a.Fragment,{children:"MapView"})}}}]);
-//# sourceMappingURL=447.f6ab03e1.chunk.js.map

@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/447.f6ab03e1.chunk.js","mappings":"uLAMA,EAJgB,WACd,OAAO","sources":["views/MapView/MapView.jsx"],"sourcesContent":["import styles from './MapView.module.css';\n\nconst MapView = () => {\n  return <>MapView</>;\n};\n\nexport default MapView;\n"],"names":[],"sourceRoot":""}
