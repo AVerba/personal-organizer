@@ -1,10 +1,10 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { render } from 'react-dom';
 import MapGL from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css';
+// const {MAPBOX_TOKEN} = process.env;
 
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoiYWJoaWxhc2hhLXNpbmhhIiwiYSI6ImNqdzFwYWN1ajBtOXM0OG1wbHAwdWJlNmwifQ.91s73Dy03voy-wPZEeuV5Q';
