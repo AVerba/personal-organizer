@@ -1,0 +1,1 @@
+export { SmallCalendar } from './SmallCalendar';
