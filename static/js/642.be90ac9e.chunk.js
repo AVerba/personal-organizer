@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpersonal_organizer=self.webpackChunkpersonal_organizer||[]).push([[642],{2642:function(e,r,n){n.r(r),n.d(r,{default:function(){return u}});var t="CalendarView_title__r2cKD",a=n(1614),s=n(184),u=function(){return(0,s.jsx)(a.Z,{children:(0,s.jsx)("h4",{className:t,children:"We are sorry, but page at the moment under construction"})})}}}]);
-//# sourceMappingURL=642.be90ac9e.chunk.js.map
