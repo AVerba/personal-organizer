@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-organizer/static/css/main.52f1e12e.css",
-    "main.js": "/personal-organizer/static/js/main.0bb4cc0e.js",
+    "main.js": "/personal-organizer/static/js/main.91c72dde.js",
     "static/css/325.6ad1239d.chunk.css": "/personal-organizer/static/css/325.6ad1239d.chunk.css",
     "static/js/325.321cab90.chunk.js": "/personal-organizer/static/js/325.321cab90.chunk.js",
     "static/css/540.e6e299ab.chunk.css": "/personal-organizer/static/css/540.e6e299ab.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/475.522ec480.chunk.css": "/personal-organizer/static/css/475.522ec480.chunk.css",
     "static/js/475.35aec642.chunk.js": "/personal-organizer/static/js/475.35aec642.chunk.js",
     "static/css/868.1f815cb6.chunk.css": "/personal-organizer/static/css/868.1f815cb6.chunk.css",
-    "static/js/868.fe909268.chunk.js": "/personal-organizer/static/js/868.fe909268.chunk.js",
+    "static/js/868.73755398.chunk.js": "/personal-organizer/static/js/868.73755398.chunk.js",
     "static/css/689.2a480bbf.chunk.css": "/personal-organizer/static/css/689.2a480bbf.chunk.css",
     "static/js/689.288c81c2.chunk.js": "/personal-organizer/static/js/689.288c81c2.chunk.js",
     "static/js/593.093c134f.chunk.js": "/personal-organizer/static/js/593.093c134f.chunk.js",
@@ -23,7 +23,7 @@
     "index.html": "/personal-organizer/index.html",
     "static/media/plus.svg": "/personal-organizer/static/media/plus.8f3ab9f72337618f2823670542a3a8e4.svg",
     "main.52f1e12e.css.map": "/personal-organizer/static/css/main.52f1e12e.css.map",
-    "main.0bb4cc0e.js.map": "/personal-organizer/static/js/main.0bb4cc0e.js.map",
+    "main.91c72dde.js.map": "/personal-organizer/static/js/main.91c72dde.js.map",
     "325.6ad1239d.chunk.css.map": "/personal-organizer/static/css/325.6ad1239d.chunk.css.map",
     "325.321cab90.chunk.js.map": "/personal-organizer/static/js/325.321cab90.chunk.js.map",
     "540.e6e299ab.chunk.css.map": "/personal-organizer/static/css/540.e6e299ab.chunk.css.map",
@@ -35,13 +35,13 @@
     "475.522ec480.chunk.css.map": "/personal-organizer/static/css/475.522ec480.chunk.css.map",
     "475.35aec642.chunk.js.map": "/personal-organizer/static/js/475.35aec642.chunk.js.map",
     "868.1f815cb6.chunk.css.map": "/personal-organizer/static/css/868.1f815cb6.chunk.css.map",
-    "868.fe909268.chunk.js.map": "/personal-organizer/static/js/868.fe909268.chunk.js.map",
+    "868.73755398.chunk.js.map": "/personal-organizer/static/js/868.73755398.chunk.js.map",
     "689.2a480bbf.chunk.css.map": "/personal-organizer/static/css/689.2a480bbf.chunk.css.map",
     "689.288c81c2.chunk.js.map": "/personal-organizer/static/js/689.288c81c2.chunk.js.map",
     "593.093c134f.chunk.js.map": "/personal-organizer/static/js/593.093c134f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52f1e12e.css",
-    "static/js/main.0bb4cc0e.js"
+    "static/js/main.91c72dde.js"
   ]
 }
