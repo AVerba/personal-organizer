@@ -1,6 +1,6 @@
 import styles from './CreateEventButton.module.css';
 import React, { useContext } from 'react';
-import plusImg from '../assets/plus.svg';
+import plusImg from '../../../assets/plus.svg';
 import GlobalContext from '../../../context/GlobalContext';
 export const CreateEventButton = () => {
   const { setShowEventModal } = useContext(GlobalContext);

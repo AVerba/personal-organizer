@@ -19,7 +19,6 @@ const NotFoundPageView = lazy(() =>
 );
 
 export const App = () => {
-  console.table(getMonth(7));
   const dispatch = useDispatch();
   return (
     <>
