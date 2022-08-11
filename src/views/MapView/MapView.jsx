@@ -5,9 +5,13 @@ import { MapApp } from '../../components/Map/MapApp';
 
 const MapView = () => {
   return (
-    <Container>
+    <>
+      <h4 className={styles.title}>
+        We are sorry, but page at the moment under construction
+      </h4>
+
       <MapApp />
-    </Container>
+    </>
   );
 };
 

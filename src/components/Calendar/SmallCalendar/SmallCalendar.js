@@ -1,8 +1,11 @@
 import styles from './SmallCalendar.module.css';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import dayjs from 'dayjs';
 import React, { useContext, useEffect, useState } from 'react';
 import GlobalContext from '../../../context/GlobalContext';
 import { getMonth } from '../../../utils';
+import { CreateEventButton } from '../CreateEventButton';
 
 export const SmallCalendar = () => {
   const [currentMonthIdx, setCurrentMonthIdx] = useState(dayjs().month());
@@ -41,25 +44,22 @@ export const SmallCalendar = () => {
   }
 
   return (
-    <div className="mt-9">
-      <header className="flex justify-between">
-        <p className="text-gray-500 font-bold">
+    <div className={styles.smallCalendar}>
+      <header className={styles.header}>
+        <p className={styles.monthlabel}>
           {dayjs(new Date(dayjs().year(), currentMonthIdx)).format('MMMM YYYY')}
         </p>
+
         <div>
-          <button onClick={handlePrevMonth}>
-            <span className="material-icons-outlined cursor-pointer text-gray-600 mx-2">
-              chevron_left
-            </span>
+          <button className={styles.navBtn} onClick={handlePrevMonth}>
+            <ChevronLeftIcon />
           </button>
-          <button onClick={handleNextMonth}>
-            <span className="material-icons-outlined cursor-pointer text-gray-600 mx-2">
-              chevron_right
-            </span>
+          <button className={styles.navBtn} onClick={handleNextMonth}>
+            <ChevronRightIcon />
           </button>
         </div>
       </header>
-      <div className="grid grid-cols-7 grid-rows-6">
+      <div className={styles.calendarMatrix}>
         {currentMonth[0].map((day, i) => (
           <span key={i} className="text-sm py-1 text-center">
             {day.format('dd').charAt(0)}
@@ -70,13 +70,14 @@ export const SmallCalendar = () => {
             {row.map((day, idx) => (
               <button
                 key={idx}
+                className={styles.day}
                 onClick={() => {
                   setSmallCalendarMonth(currentMonthIdx);
                   setDaySelected(day);
                 }}
-                className={`py-1 w-full ${getDayClass(day)}`}
+                // className={`py-1 w-full ${getDayClass(day)}`}
               >
-                <span className="text-sm">{day.format('D')}</span>
+                <span className={styles.day}>{day.format('D')}</span>
               </button>
             ))}
           </React.Fragment>

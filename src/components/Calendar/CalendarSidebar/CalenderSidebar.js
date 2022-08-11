@@ -5,10 +5,10 @@ import { SmallCalendar } from '../SmallCalendar';
 import { Labels } from '../CalendarLabels';
 export const CalendarSidebar = () => {
   return (
-    <aside className="border p-5 w-64">
+    <aside className={styles.sidebar}>
       <CreateEventButton />
       <SmallCalendar />
-      <Labels />
+      {/*<Labels />*/}
     </aside>
   );
 };
