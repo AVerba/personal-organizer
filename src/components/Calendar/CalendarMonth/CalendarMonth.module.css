@@ -1,0 +1,7 @@
+.month {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*width:100w;*/
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+}

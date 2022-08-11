@@ -27,7 +27,7 @@ export const CalendarDay = ({ day, rowIdx }) => {
 
   return (
     <div className="border border-gray-200 flex flex-col">
-      <header className="flex flex-col items-center">
+      <header className={styles.day}>
         {rowIdx === 0 && (
           <p className="text-sm mt-1">{day.format('ddd').toUpperCase()}</p>
         )}

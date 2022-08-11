@@ -1,0 +1,7 @@
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(80vh / 5);
+}
