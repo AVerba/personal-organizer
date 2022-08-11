@@ -1,5 +1,51 @@
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
 .header {
   display: flex;
-
   align-items: center;
+  margin-top: 25px;
+  padding-bottom: 15px;
+}
+.logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.title {
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+.todayBtn {
+  padding: 7px 12px 5px 12px;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  text-transform: none;
+  opacity: 1;
+  background-color: transparent;
+  border: solid 2px #d9d9d9;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.navBtn {
+  color: #5f6368;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+.monthLabel {
+  color: #5f6368;
+  font-family: Google Sans, Roboto, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
 }

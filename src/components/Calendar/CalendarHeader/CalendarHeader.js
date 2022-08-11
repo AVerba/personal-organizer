@@ -1,4 +1,6 @@
 import styles from './CalendarHeader.module.css';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 import dayjs from 'dayjs';
 import React, { useContext } from 'react';
@@ -21,22 +23,20 @@ export const CalendarHeader = () => {
   }
   return (
     <header className={styles.header}>
-      <img src={logo} alt="calendar" className="mr-2 w-12 h-12" />
-      <h1 className="mr-10 text-xl text-gray-500 fond-bold">Calendar</h1>
-      <button onClick={handleReset} className="border rounded py-2 px-4 mr-5">
+      <div className={styles.logo}>
+        <img className={styles.logo} src={logo} alt="calendar" />
+      </div>
+      <h1 className={styles.title}>Calendar</h1>
+      <button className={styles.todayBtn} onClick={handleReset}>
         Today
       </button>
-      <button onClick={handlePrevMonth}>
-        <span className="material-icons-outlined cursor-pointer text-gray-600 mx-2">
-          chevron_left
-        </span>
+      <button className={styles.navBtn} onClick={handlePrevMonth}>
+        <ChevronLeftIcon />
       </button>
-      <button onClick={handleNextMonth}>
-        <span className="material-icons-outlined cursor-pointer text-gray-600 mx-2">
-          chevron_right
-        </span>
+      <button className={styles.navBtn} onClick={handleNextMonth}>
+        <ChevronRightIcon />
       </button>
-      <h2 className="ml-4 text-xl text-gray-500 font-bold">
+      <h2 className={styles.monthLabel}>
         {dayjs(new Date(dayjs().year(), monthIndex)).format('MMMM YYYY')}
       </h2>
     </header>
