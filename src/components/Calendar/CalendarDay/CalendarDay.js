@@ -2,6 +2,7 @@ import styles from './CalendarDay.module.css';
 import dayjs from 'dayjs';
 import React, { useContext, useState, useEffect } from 'react';
 import GlobalContext from '../../../context/GlobalContext';
+import cx from 'classnames';
 
 export const CalendarDay = ({ day, rowIdx }) => {
   const [dayEvents, setDayEvents] = useState([]);
@@ -12,6 +13,12 @@ export const CalendarDay = ({ day, rowIdx }) => {
     setSelectedEvent,
   } = useContext(GlobalContext);
 
+  const activeDay =
+    day.format('DD-MM-YY') === dayjs().format('DD-MM-YY')
+      ? styles.active
+      : null;
+  const classListDay = cx(styles.dataDay, activeDay);
+
   useEffect(() => {
     const events = filteredEvents.filter(
       evt => dayjs(evt.day).format('DD-MM-YY') === day.format('DD-MM-YY')
@@ -19,24 +26,16 @@ export const CalendarDay = ({ day, rowIdx }) => {
     setDayEvents(events);
   }, [filteredEvents, day]);
 
-  function getCurrentDayClass() {
-    return day.format('DD-MM-YY') === dayjs().format('DD-MM-YY')
-      ? 'bg-blue-600 text-white rounded-full w-7'
-      : '';
-  }
-
   return (
     <div className="border border-gray-200 flex flex-col">
       <header className={styles.day}>
         {rowIdx === 0 && (
-          <p className="text-sm mt-1">{day.format('ddd').toUpperCase()}</p>
+          <p className={styles.weekDay}>{day.format('ddd').toUpperCase()}</p>
         )}
-        <p className={`text-sm p-1 my-1 text-center  ${getCurrentDayClass()}`}>
-          {day.format('DD')}
-        </p>
+        <p className={classListDay}>{day.format('DD')}</p>
       </header>
       <div
-        className="flex-1 cursor-pointer"
+        // className="flex-1 cursor-pointer"
         onClick={() => {
           setDaySelected(day);
           setShowEventModal(true);

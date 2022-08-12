@@ -6,6 +6,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import GlobalContext from '../../../context/GlobalContext';
 import { getMonth } from '../../../utils';
 import { CreateEventButton } from '../CreateEventButton';
+import cx from 'classnames';
 
 export const SmallCalendar = () => {
   const [currentMonthIdx, setCurrentMonthIdx] = useState(dayjs().month());
@@ -33,13 +34,11 @@ export const SmallCalendar = () => {
     const format = 'DD-MM-YY';
     const nowDay = dayjs().format(format);
     const currDay = day.format(format);
-    const slcDay = daySelected && daySelected.format(format);
+    // const slcDay = daySelected && daySelected.format(format);
     if (nowDay === currDay) {
-      return 'bg-blue-500 rounded-full text-white';
-    } else if (currDay === slcDay) {
-      return 'bg-blue-100 rounded-full text-blue-600 font-bold';
+      return true;
     } else {
-      return '';
+      return false;
     }
   }
 
@@ -59,14 +58,15 @@ export const SmallCalendar = () => {
           </button>
         </div>
       </header>
+
       <div className={styles.calendarMatrix}>
         {currentMonth[0].map((day, i) => (
-          <span key={i} className="text-sm py-1 text-center">
-            {day.format('dd').charAt(0)}
+          <span key={i} className={styles.weekDay}>
+            {day.format('ddd').toUpperCase()}
           </span>
         ))}
         {currentMonth.map((row, i) => (
-          <React.Fragment key={i}>
+          <React.Fragment key={i} className={styles.smDay}>
             {row.map((day, idx) => (
               <button
                 key={idx}
@@ -75,9 +75,12 @@ export const SmallCalendar = () => {
                   setSmallCalendarMonth(currentMonthIdx);
                   setDaySelected(day);
                 }}
-                // className={`py-1 w-full ${getDayClass(day)}`}
               >
-                <span className={styles.day}>{day.format('D')}</span>
+                <span
+                  className={getDayClass(day) ? styles.activeDay : styles.day}
+                >
+                  {day.format('D')}
+                </span>
               </button>
             ))}
           </React.Fragment>

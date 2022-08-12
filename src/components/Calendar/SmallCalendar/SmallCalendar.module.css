@@ -1,12 +1,14 @@
 .smallCalendar {
   padding: 0 15px;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 12px;
 }
+
 .monthlabel {
   padding-left: 5px;
   font-family: 'Google Sans', Roboto, Arial, sans-serif;
@@ -17,6 +19,7 @@
   color: #3c4043;
   margin: 0;
 }
+
 .navBtn {
   color: #5f6368;
   width: 40px;
@@ -24,11 +27,34 @@
   background-color: transparent;
   border: none;
 }
+
 .calendarMatrix {
   display: grid;
   grid-template-columns: repeat(7, auto);
 }
+
 .day {
+  width: 35px;
+  height: 35px;
   background-color: transparent;
   border: none;
+  align-items: center;
+}
+
+.weekDay {
+  font-size: 10px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.activeDay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #1a73e8;
+  color: #fff;
 }
